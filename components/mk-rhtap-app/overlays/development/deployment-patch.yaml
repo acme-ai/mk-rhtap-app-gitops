@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata:   
-  annotations:  
+metadata:
+  annotations:
     tad.gitops.set/image: ".spec.template.spec.containers[0].image"
     tad.gitops.get/image: ".spec.template.spec.containers[0].image"
     tad.gitops.set/replicas: ".spec.replicas"
-    tad.gitops.get/replicas: ".spec.replicas" 
+    tad.gitops.get/replicas: ".spec.replicas"
   name: mk-rhtap-app
 spec:
-  replicas: 1 
-  template: 
+  replicas: 1
+  template:
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/dance-bootstrap-app:latest
-        name: container-image  
+        - image: rhtap-quay-quay-rhtap-quay.edgeplatform-test-wec2-9ca4d14d48413d18ce61b80811ba4308-0000.us-south.containers.appdomain.cloud/acme-ai/mk-rhtap-app:5624344654009f9fd1f42d8646a21a0a15f58d28@sha256:de373649c90d8a27e9937aae8e637859258676998aec31f28cb907af9c544dc6
+          name: container-image
