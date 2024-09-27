@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: mk-rhtap-app-repository
+spec:
+  url: https://github.com/acme-ai/mk-rhtap-app

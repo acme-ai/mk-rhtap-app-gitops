@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: mk-rhtap-app-gitops
+  description: This is GitOps manifest for mk-rhtap-app   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: mk-rhtap-app
+    janus-idp.io/tekton: mk-rhtap-app 
+    backstage.io/kubernetes-id: mk-rhtap-app 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:default/kalantar 
+  lifecycle: experimental
+  dependsOn:
+    - component:mk-rhtap-app
