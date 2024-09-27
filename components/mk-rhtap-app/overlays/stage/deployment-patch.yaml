@@ -12,5 +12,5 @@ spec:
   template: 
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/dance-bootstrap-app:latest
+      - image: rhtap-quay-quay-rhtap-quay.edgeplatform-test-wec2-9ca4d14d48413d18ce61b80811ba4308-0000.us-south.containers.appdomain.cloud/acme-ai/mk-rhtap-app:6483c21c402586c82f3c797b616deb2afaa5b2db@sha256:5df280b4044e9b0577d020359a8277977b7b79d0b69fa43aae92ef536e8a2761
         name: container-image  
